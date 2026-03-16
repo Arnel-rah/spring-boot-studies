@@ -36,7 +36,7 @@ public class OrderService {
                         rs.getString("client"),
                         rs.getDouble("total"),
                         rs.getString("status"),
-                        rs.getTimestamp("created_at")
+                        rs.getTimestamp("created_at").toLocalDateTime()
                 ));
             }
 
@@ -64,7 +64,7 @@ public class OrderService {
                             rs.getString("client"),
                             rs.getDouble("total"),
                             rs.getString("status"),
-                            rs.getTimestamp("created_at")
+                            rs.getTimestamp("created_at").toLocalDateTime()
                     );
                 }
             }
@@ -95,7 +95,7 @@ public class OrderService {
                             rs.getString("client"),
                             rs.getDouble("total"),
                             rs.getString("status"),
-                            rs.getTimestamp("created_at")
+                            rs.getTimestamp("created_at").toLocalDateTime()
                     ));
                 }
             }
